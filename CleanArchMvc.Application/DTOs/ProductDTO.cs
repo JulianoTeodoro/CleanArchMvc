@@ -26,13 +26,16 @@ namespace CleanArchMvc.Application.DTOs
         [DisplayName("Description")]
         public string Description { get; set; }
 
-        [Required]
-        [MinLength(0)]
+        [Required(ErrorMessage = "This price is required")]
         [Column(TypeName = "decimal(18,2)")]
         [DisplayFormat(DataFormatString = "{0:C2}")]
         [DataType(DataType.Currency)]
         [DisplayName("Price")]
         public decimal Price { get; set; }
+
+        [Required]
+        [DisplayName("Stock")]
+        public int Stock { get; set; }
 
         [MaxLength(250)]
         [DisplayName("Image")]

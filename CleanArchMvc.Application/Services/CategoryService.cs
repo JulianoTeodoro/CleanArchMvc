@@ -14,12 +14,12 @@ namespace CleanArchMvc.Application.Services
     public class CategoryService : ICategoryService
     {
         private readonly IMapper _mapper;
-        protected readonly ICategoryRepository _categoryRepository;
+        private ICategoryRepository _categoryRepository;
 
-        public CategoryService(IMapper mapper, ICategoryRepository categoryRepository)
+        public CategoryService(ICategoryRepository categoryRepository ,IMapper mapper)
         {
-            _mapper = mapper;
             _categoryRepository = categoryRepository;
+            _mapper = mapper;
         }
 
         public async Task Add(CategoryDTO categoryDTO)
@@ -30,22 +30,19 @@ namespace CleanArchMvc.Application.Services
 
         public async Task<CategoryDTO> GetById(int id)
         {
-            var category = _categoryRepository.GetById(id);
-            var categoryDTO = _mapper.Map<Task<CategoryDTO>>(category);
-            return await categoryDTO;
+            var category = await _categoryRepository.GetById(id);
+            return _mapper.Map<CategoryDTO>(category);
         }
 
         public async Task<IEnumerable<CategoryDTO>> GetCategorys()
         {
-            var category = _categoryRepository.GetCategoriesAsync();
-            var categoryDTO = _mapper.Map<Task<IEnumerable<CategoryDTO>>>(category);
-            return await categoryDTO;
+            var category = await _categoryRepository.GetCategoriesAsync();
+            return _mapper.Map<IEnumerable<CategoryDTO>>(category);
         }
 
         public async Task Remove(int id)
         {
-            var categoryDTO = _mapper.Map<CategoryDTO>(_categoryRepository.GetById(id));
-            var category = _mapper.Map<Category>(categoryDTO);
+            var category = await _categoryRepository.GetById(id);
             await _categoryRepository.Remove(category);
         }
         public async Task Update(CategoryDTO categoryDTO)
