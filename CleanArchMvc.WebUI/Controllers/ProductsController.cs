@@ -2,6 +2,7 @@
 using CleanArchMvc.Application.Interfaces;
 using CleanArchMvc.Domain.Entities;
 using CleanArchMvc.WebUI.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -25,6 +26,7 @@ namespace CleanArchMvc.WebUI.Controllers
             return View(products);
         }
 
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create()
         {
             var categorys = await _categoryService.GetCategorys();
@@ -47,6 +49,7 @@ namespace CleanArchMvc.WebUI.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -74,6 +77,7 @@ namespace CleanArchMvc.WebUI.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id is null) return NotFound("Id not provided");

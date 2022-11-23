@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "15TN50Aozc8v8McAaWr95++mebRdCIZVPaA4Kx3YNTaqQfAKOMaUo5yvp482PTfAnT4Isy+jZjDh4cy7+XAfow==",
+  "dgSpecHash": "YpOTRaFBZLK5itmBEzj9d4z8p/eJm4aD+yeRsWER+AvgFS4ODiybMPqrEt532yE1bZwb/KaT1qy4Ihxzcxxyrg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Juliano\\source\\repos\\cleanarq\\CleanArchMvc\\CleanArchMvc.Application\\CleanArchMvc.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Juliano\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
-    "C:\\Users\\Juliano\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\Juliano\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
     "C:\\Users\\Juliano\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\Juliano\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.0.0\\mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\Juliano\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

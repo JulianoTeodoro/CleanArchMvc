@@ -3,6 +3,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using CleanArchMvc.Application.DTOs;
 using System.Security.Cryptography.X509Certificates;
+using Microsoft.AspNetCore.Authorization;
+using System.Data;
 
 namespace CleanArchMvc.WebUI.Controllers
 {
@@ -23,6 +25,7 @@ namespace CleanArchMvc.WebUI.Controllers
             return View(categories);
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             var category = new CategoryDTO();
@@ -42,6 +45,7 @@ namespace CleanArchMvc.WebUI.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -66,6 +70,7 @@ namespace CleanArchMvc.WebUI.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)

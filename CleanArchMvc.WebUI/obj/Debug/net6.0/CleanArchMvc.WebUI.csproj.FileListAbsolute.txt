@@ -73,3 +73,10 @@ C:\Users\Juliano\source\repos\cleanarq\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug
 C:\Users\Juliano\source\repos\cleanarq\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net6.0\MediatR.dll
 C:\Users\Juliano\source\repos\cleanarq\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net6.0\MediatR.Contracts.dll
 C:\Users\Juliano\source\repos\cleanarq\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Juliano\source\repos\cleanarq\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Juliano\source\repos\cleanarq\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Juliano\source\repos\cleanarq\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Juliano\source\repos\cleanarq\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Juliano\source\repos\cleanarq\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Juliano\source\repos\cleanarq\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Juliano\source\repos\cleanarq\CleanArchMvc\CleanArchMvc.WebUI\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll

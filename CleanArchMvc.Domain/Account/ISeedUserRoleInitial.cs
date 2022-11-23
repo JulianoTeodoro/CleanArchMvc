@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CleanArchMvc.Domain.Entities
+namespace CleanArchMvc.Domain.Account
 {
-    public class Account
+    public interface ISeedUserRoleInitial
     {
-
+        void SeedUsers();
+        void SeedRoles();
     }
 }
